@@ -152,18 +152,18 @@ body {
     text-align: left;
 }
 
+/* Skrócony przycisk Zamknij */
 .error_button.close {
-    margin-top: 20px;
-    padding: 6px 14px;
-    background-color: #0045a5;
-    color: white;
+    margin-top: 16px;
+    padding: 4px 10px;
+    background-color: transparent;
+    color: #0045a5;
     border: none;
-    border-radius: 20px;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     cursor: pointer;
-    line-height: 1.2;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    text-decoration: underline;
 }
 
 .error_button {
