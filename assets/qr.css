@@ -153,15 +153,17 @@ body {
 }
 
 .error_button.close {
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 6px 14px;
     background-color: #0045a5;
     color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 16px;
+    border-radius: 20px;
+    font-size: 14px;
     text-align: center;
     cursor: pointer;
+    line-height: 1.2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .error_button {
@@ -297,6 +299,74 @@ body {
 .submit_code_button:disabled {
     background-color: #c7d2e5;
     cursor: not-allowed;
+}
+
+/* Ekran błędu */
+.error_view {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+}
+
+.error_view .error_icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f44336;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.error_view .main_title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.error_view .error_description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.error_view .error_button_primary {
+    background-color: #0045a5;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.error_view .error_button_secondary {
+    background-color: white;
+    color: #0045a5;
+    border: 2px solid #0045a5;
+    padding: 12px 30px;
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
 }
 
 /* Responsive for mobile */
